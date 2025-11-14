@@ -6,21 +6,7 @@
     <title>Nicánima Estudio</title>
     <link rel="stylesheet" href="style.css">
 </head>     
-<script>
-    // 1. Selecciona el botón y la lista de enlaces
-    const botonHamburguesa = document.querySelector('.menu-hamburguesa');
-    const navLinks = document.querySelector('.nav-links');
 
-    // 2. Agrega un "escuchador" de evento al botón
-    botonHamburguesa.addEventListener('click', () => {
-        // 3. Cuando se hace click, agrega o quita la clase 'active'
-        navLinks.classList.toggle('active');
-        
-        // Opcional: Para accesibilidad, cambia el estado
-        const estaAbierto = navLinks.classList.contains('active');
-        botonHamburguesa.setAttribute('aria-expanded', estaAbierto);
-    });
-</script>
 
 </script>
 <body>
@@ -45,6 +31,23 @@
         <li><a href="Sobre_nosotros.html">EQUIPO</a></li>
         <li><a href="Revolucion.html">REVOLUCIÓN CULTURAL</a></li>
             </nav>
+
+<script>
+    // 1. Selecciona el botón y la lista de enlaces
+    const botonHamburguesa = document.querySelector('.menu-hamburguesa');
+    const navLinks = document.querySelector('.nav-links');
+
+    // 2. Agrega un "escuchador" de evento al botón
+    botonHamburguesa.addEventListener('click', () => {
+        // 3. Cuando se hace click, agrega o quita la clase 'active'
+        navLinks.classList.toggle('active');
+        
+        // Opcional: Para accesibilidad, cambia el estado
+        const estaAbierto = navLinks.classList.contains('active');
+        botonHamburguesa.setAttribute('aria-expanded', estaAbierto);
+    });
+</script>
+
         </header>
         
 <!--Baner y carru-->
