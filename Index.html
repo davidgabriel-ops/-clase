@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicánima Estudio</title>
+    <link rel="stylesheet" href="style.css">
+</head>     
+<script>
+    // 1. Selecciona el botón y la lista de enlaces
+    const botonHamburguesa = document.querySelector('.menu-hamburguesa');
+    const navLinks = document.querySelector('.nav-links');
+
+    // 2. Agrega un "escuchador" de evento al botón
+    botonHamburguesa.addEventListener('click', () => {
+        // 3. Cuando se hace click, agrega o quita la clase 'active'
+        navLinks.classList.toggle('active');
+        
+        // Opcional: Para accesibilidad, cambia el estado
+        const estaAbierto = navLinks.classList.contains('active');
+        botonHamburguesa.setAttribute('aria-expanded', estaAbierto);
+    });
+</script>
+
+</script>
+<body>
+     <div class="Contenedor">
+        <header class="linea"></header>
+        <header class="cabecera">
+            <div class="Logo">
+              <a href="Inicio.html"> <img src="Img/Nicanima-logo.png" alt="Logo" class="logo-img">
+            </div></a>
+
+            <nav class="navbar">
+    <button class="menu-hamburguesa" aria-controls="menu-principal" aria-expanded="false">
+        <span class="linea"></span>
+        <span class="linea"></span>
+        <span class="linea"></span>
+    </button>
+    
+    <ul class="nav-links" id="menu-principal">
+        <li><a href="Cursos.html">CURSO</a></li>
+        <li><a href="Blog.html">BLOG</a></li>
+        <li><a href="Libros.html">LIBROS</a></li>
+        <li><a href="Sobre_nosotros.html">EQUIPO</a></li>
+        <li><a href="Revolucion.html">REVOLUCIÓN CULTURAL</a></li>
+            </nav>
+        </header>
+        
+<!--Baner y carru-->
+      <!-- Slider -->
+<div class="contenedor-slider">
+  <input type="radio" name="slider" id="slide1" checked>
+  <input type="radio" name="slider" id="slide2">
+
+  <div class="slider-content">
+    <div class="slide imagen-slide">
+      <label for="slide2" class="arrow right">›</label>
+      <img src="Img/Nuevo baner.png" alt="Portada" class="imagen-banner">
+    </div>
+
+    <div class="slide video-slide">
+      <label for="slide1" class="arrow left">‹</label>
+      <video controls class="video-banner">
+        <source src="Img/Trailer .mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</div>
+
+
+        <div class="contenedor-equipo">
+            <img src="Img/euipo 1.png" class="equipo" alt="Equipo">
+            <p class="sobrequipo">
+                El equipo de Nicánima Estudio está hecho de chavalos y chavalas con garra, la mayoría estudiantes de la 
+                UNAN-Managua, que cargan bien puesta la camiseta de la cultura nica. <a href="Sobre_nosotros.html">Ver más</a>
+            </p>
+        </div>
+
+    <div class="Tarjetas">
+
+        <div class="Seldas">
+            <h1 class="Blog-Inicio">Blog</h1>
+
+            <div class="Contenedor_Blog"><a href="Blog2.html">
+                <img src="Img/Conocé mas sobre la redacción de los libros.png" alt="Redacción" class="imagenes"></a>
+                <h3>Conocé más sobre la redacción de los libros</h3>
+                <p>Exploramos el proceso creativo y literario detrás de las obras de Nicánima. <a href="Blog2.html"><em>Ver más</em></a></p>
+            </div>
+
+            <div class="Contenedor_Blog"><a href="Comentario.html">
+                <img src="Img/Historia detrás de las leyendas.png" alt="Leyendas" class="imagenes"></a>
+                <h3>Historia detrás de las leyendas</h3>
+                <p>Conocé los orígenes de las leyendas que nos inspiran a preservar la cultura. <a href="Comentario.html"><em>Ver más</em></a></p>
+            </div>
+
+             <div class="Contenedor_Blog"><a href="Comentario3.html">
+                <img src="Img/Estructura.png" alt="Leyendas" class="imagenes"></a>
+                <h3>Estructura de los libros </h3>
+                <p>Aquí se explica de dónde proviene. Este primer contacto no solo informa</piene el mito, en qué regiones se cuenta y qué simbolismos gua> <a href="Comentario3.html"><em>Ver más</em></a>
+                    
+            </div>
+            </div>
+
+            <p class="frase"><em>"El eco de nuestros abuelos, animado en cada trazo. Esto es el folclore nicaragüense."</em></p>
+        
+        <div class="Seldas">
+        
+            <h1 class="Curso-Inicio">Cursos</h1>
+
+            <div class="Contenedor_Blog"><a href="">
+                <img src="Img/Portada personajes.png" alt="Redacción" class="imagenes"></a>
+                <h3>Diseño de personajes</h3>
+                <p>Descubrí el arte de contar historias a través de palabras e imágenes. <a href=""><em>Proximamente</em></a></p>
+            </div>
+
+            <div class="Contenedor_Blog"><a href="Cursos.html">
+                <img src="Img/Portada doblaje.png" alt="Leyendas" class="imagenes"></a>
+                <h3>Doblaje de voz para animación</h3>
+                <p>Se participe de el doblaje animado de Nicánima. <a href=""><em>Ir ahora </em></a></p>
+            </div>
+
+             <div class="Contenedor_Blog"><a href="Comentario3.html">
+                <img src="Img/Portada narrativa.png" alt="Leyendas" class="imagenes"></a>
+                <h3>Narrativa Tradicional </h3>
+                <p>Descubrí técnicas para investigar, escuchar y documentar historias populares directamente desde la gente y su memoria oral.</piene el mito, en qué regiones se cuenta y qué simbolismos gua> <a href="Comentario3.html"><em>Proximamente </em></a>
+                
+        </div>
+</div>
+
+    <footer class="footer">
+        <div class="footer-content">
+                <div class="logo-section">
+                    <img src="Img/Logo en Blanco.png" alt="Logo Nicanima" class="logo">
+                </div>
+            <div class="social-items">
+                    <div class="social-icons">
+                        <a href="#"><img src="Img/face.png" alt="Facebook"></a>
+                        <a href="https://www.amazon.com/Ag%C3%BCizotes-Despertar-Jinete-maldito-Spanish-ebook/dp/B0DNF8X8C4/ref=sr_1_1?crid=2AOBBEIQ96993&dib=eyJ2IjoiMSJ9.dbLXeLUby-L6xSDCRVlZ8zSOjJNRt3IXRrb_gCL7sRW795nhhNRq6s-Fw5n4xGJm6RBeoq32pYhYc5gX4kj1XKUFHdJBkx1cFivq1cFIESXry-R8MOKXg8_ugzoiBy3RoCUN5TSVHGeELSURXYvAS50R6RK6MZ86v7LbYIS0tYlL2aFCJ3aoukGq37tsXPOTvrAAKzTQB2Vc04C_XUdN2E1AP3RooS09ZoETbr1vTt4.oimBOk-ND4L07IaESpTXinC8hVBlffTcfzPMutxMqu0&dib_tag=se&keywords=aguizote&qid=1748380849&sprefix=aguizote+%2Caps%2C162&sr=8-1"><img src="Img/amazon-circle-svgrepo-com (1).png" alt="Amazon"></a>
+                        <a href="#"><img src="Img/instagram.png" alt="Instagram"></a>
+                        <a href="mailto:eylingiveth@gmail.com"><img src="Img/Icono de mensaje.png" alt="Correo"></a>
+                    </div>
+                <p>© 2024 por Marcos Iván Vílchez Ruiz.</p>
+            </div>
+         <div>
+            <img src="Img/mascarague.png" alt="Logo derecha" class="Logo-derecha">
+         </div>
+    </footer>
+
+</body>
+</html>
